@@ -1,0 +1,98 @@
+<?php
+if(!empty($_SESSION['id'])) {
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Post</title>
+
+</head>
+<body style="background-color: ghostwhite">
+    <div class="wrapper">
+    <br>
+  <div class="card border border-0 mr-5 ml-5 bg-white border border-0 rounded-0 shadow">
+  <div class="card-body table-responsive">
+    <h3 style="color: #05386B;" class="text-center">ADD POST</h3>
+  </div>
+</div>
+<e style="font-size: 14px; color: #000">
+
+  <div class="card border border-0 rounded-0 pt-5 pb-5 mr-5 ml-5 mb-3 mt-3">
+  <div class="card border border-0 rounded-0 shadow ml-5 mr-5">
+    <div class="container">
+      <div class="row">
+      <div class="col">
+      <div class="card-body">
+        <?php if($this->session->flashdata('warning')) { ?>
+        <div class="alert alert-danger"><strong>Error!&nbsp;</strong><?= $this->session->flashdata('warning') ?> </div>
+        <?php } if($this->session->flashdata('success')) { ?>
+          <div class="alert alert-success" style="background-color: green"><strong>Success!&nbsp;</strong><?= $this->session->flashdata('success') ?></div>
+
+        <?php } ?>
+        <form method="post" action="<?php echo base_url()?>admin/Posts/save" enctype="multipart/form-data">
+        <div class="container ml-2">
+        <div class="row"> 
+          <div class="col col-sm">
+            <p class="mt-3 text-dark" style="font-size: 17px">Post Title:
+            <input class="form-control mt-1 rounded-3" id="txt-title" type="text" name="title" style="width: 100%"></p>
+            <span class="spn-err" id="err-title" style="color: red; display: none;">Please provide title</span>
+          </div>
+          <div class="col col-sm">
+            <p class="mt-3 text-dark" style="font-size: 17px">Project:
+            <select class="form-control mt-1 rounded-3" id="txt-detail" name="project_id" style="width: 100%">
+              <?php 
+              $ongoing_projects = $this->ProjectsModel->fetch_ongoing_projects(); 
+              if($ongoing_projects) { ?>
+                <option></option>
+               <?php foreach($ongoing_projects as $pr) {
+              ?>
+              
+              <option value="<?php echo $pr->id; ?>"><?php echo $pr->name; ?></option>
+            <?php }} else { ?>
+              <option disabled>No Ongoing Projects Found</option>
+            <?php } ?>
+            </select></p>
+            <span class="spn-err" id="err-detail" style="color: red; display: none;">Please select project</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm">
+            <p class="mt-3 text-dark" style="font-size: 17px">Test Center:
+            <input class="form-control mt-1 rounded-3" id="txt-center" type="text" name="center" style="width: 100%"></p>
+          </div>
+          <div class="col col-sm">
+            <p class="mt-3 text-dark" style="font-size: 17px">Test Date:
+            <input class="form-control mt-1 rounded-3" id="txt-date" type="date" name="date" style="width: 100%"></p>
+            <span class="spn-err" id="err-date" style="color: red; display: none;">Please provide test date</span>
+          </div>
+          <div class="col col-sm">
+            <p class="mt-3 text-dark" style="font-size: 17px">Test Time:
+            <input class="form-control mt-1 rounded-3" id="txt-time" type="time" name="time" style="width: 100%"></p>
+            <span class="spn-err" id="err-date" style="color: red; display: none;">Please provide test time</span>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col col-sm">
+            <button style="float:right" class="btn btn-primary rounded-3 pl-3 pr-3" name="save" onclick="return add_division()"><i class="fa fa-check-square" aria-hidden="true"></i> Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+<script src="<?php echo base_url()?>assets/scripts/admin/divisions/add.js"></script>
+<script src="<?php echo base_url()?>assets/css/bower_components/jquery-ui/jquery-ui.js"></script>
+
+<?php } else {
+  redirect(base_url().'admin/Signin');
+}
+?>

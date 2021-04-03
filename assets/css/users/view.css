@@ -1,0 +1,18 @@
+.img-prof{width: 180px; height:141px;}
+.dv-checkbox { display: block;  position: relative;  padding-left: 35px;  margin-bottom: 12px;  cursor: pointer;  font-size: 22px;  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;}
+.dv-checkbox input { position: absolute;  opacity: 0;  cursor: pointer;  height: 0;  width: 0;}
+.checkmark { position: absolute;  top: 0;  left: 0;  height: 22px;  width: 24px;  background-color: #eee}
+.dv-checkbox input:checked ~ .checkmark {  background-color: #0e7fe1;}
+.checkmark:after { content: "";  position: absolute;  display: none}
+.dv-checkbox input:checked ~ .checkmark:after {display: block}
+.dv-checkbox .checkmark:after {left: 10px;  top: 5px;  width: 5px;  height: 11px;  border: solid white;  border-width: 0 3px 3px 0;  -webkit-transform: rotate(45deg);  -ms-transform: rotate(45deg);  transform: rotate(45deg);}
+ul {margin-bottom: 0px}
+.spn-lbl {font-size: 12px;color: #323232 !important;letter-spacing: 0.32px; font-weight: bold; margin-right: 5px}
+.ul-info h6 {font-size: 13px; color: #323232}
+.h-boxtitle{ margin: 0px; color: #286090; font-size: 17px}
+table tbody tr{font-size: 12px}
+#tbl_Userspoint_wrapper .row:first-child, #tbl_Usersreward_wrapper .row:first-child {display: none}
+
+.customers-active a { background: #c7e5ff; border-top-right-radius: 32px !important; border-bottom-right-radius: 32px !important}
+.customers-active a span {color: #0e7fe1 !important}
+.customers-active a i {color: #0e7fe1 !important}

@@ -1,0 +1,81 @@
+.main-header {background: #286090} /*#4c4cf4*/
+.main-header .logo label {color: white;font-weight: normal !important;font-size: 19px;letter-spacing: 0.4px;}
+.logo-lg img {width: 85px}
+.sidebar-toggle {color:white}
+.user-image-top {width: 25px;height: 25px;border-radius: 50%;margin-top: -7px;}
+.navbar-custom-menu li a:hover {background: #ffb200 !important}
+.main-header .navbar { margin-right: 20px}
+.slimScrollDiv{position: relative; overflow: hidden; width: auto; height: 893.7px;}
+.sidebar{overflow: hidden; width: auto; height: 893.7px;}
+.user-panel{background-image: url('../../images/user-panel-img.jpg') !important}
+.user-panel > .info, .user-panel > .info > a {color:white}
+.user-panel .image { padding: 10px 0px}
+.form-control { border-radius: 4px !important}
+input[type="text"].form-control {color: black !important}
+select.form-control {color: black !important}
+.btn-secondry {background: #f25961; border-color: #f25961; color: white}
+.btn-primary {background-color:#286090  !important;border: none !important;padding: 5px 13px !important;font-weight: bold;border-radius: 4px !important;box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.05) !important;color: white; min-width: 8vh}
+.btn-primary:hover, .btn-primary:focus {box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.1) !important; color: #0e7fe1;}
+.second-row {margin-top: 10px}
+label{ margin:0px}
+.main-header .sidebar-toggle {padding: 13px 15px !important; font-size: 18px}
+.navbar-nav #lbl-admin {color: white;font-size: 13px;font-weight: normal !important;border: 1px solid white;border-radius: 50%;padding: 4px 5px;background: #7d94b0;}
+.main-sidebar {top: 10px !important}
+
+
+.dv-page-header label {color: #323232;font-weight: normal !important;font-size: 18px;letter-spacing: 0.2px;text-transform: uppercase; border-bottom: 2px solid #4c4cf4}
+.dv-page-header:after {border-bottom: 1px solid #c7e5ff; display: block; content: ''; margin-top: -2px}
+
+/* Left menu css */
+section.sidebar { border-right: 1px solid #bfbfbf}
+.sidebar-menu {margin-top: 5px !important}
+.sidebar-menu .sub-header {text-transform: uppercase;font-size: 12px;letter-spacing: 0.4px;padding: 6px 0 6px 13px;color: rgba(0,0,0,0.54);font-weight: bold !important;}
+.sidebar-menu li.active a, .sidebar-menu li:hover a  {background: #c7e5ff; color: white; border-top-right-radius: 32px !important; border-bottom-right-radius: 32px !important}
+.sidebar-menu li {padding: 3px 5px 3px 0px !important}
+.sidebar-menu li a {padding: 10px 5px !important}
+.sidebar-menu li.active a span, .sidebar-menu li.active a i, .sidebar-menu li:hover a span, .sidebar-menu li:hover a i {color: #0e7fe1}
+.sidebar-menu li a span {color:rgba(0,0,0,.82); font-size: 13px; letter-spacing: 0.4px;}
+.sidebar-menu li a i {color: rgba(0,0,0,.54)}
+.sidebar-menu li a .fa {margin-right: 0px}
+.main-sidebar {background-color:#ffffff;box-shadow: 1px 0px 20pxrgba(0,0,0,0.08);}
+.icon-menudrpdwn {position: absolute; right: 13px; top: 11px}
+.ul-submenu {list-style: none; padding-left: 0px; height: 0px; overflow: hidden; transition: height 0.8s;}
+.ul-submenu li i {width: 21px}
+.ul-submenu li a {padding: 7px 5px 7px 39px !important; display: inline-block; width: 100%; border-radius: 5px}
+/*.i-submenu { margin-right: 10px}*/
+.icon-menudrpdwn .fa-angle-left {font-size: 16px}
+
+/*Datatable*/
+table.dataTable {color: #323232 !important}
+table.dataTable tr.odd {background: #c7e5ff !important}
+table.dataTable thead {background: #4c4c4c; color: white}
+table.dataTable .lnk-edit {background: #8fa4b7;color: white;padding: 6px 19px;border-radius: 4px;font-size: 12px;}
+.dataTables_wrapper #tbl_Outlets_info {color: #323232}
+.dataTables_wrapper .dataTables_info {color: #4c4c4c !important; font-weight: bold; font-size: 13px}
+.pagination li a {padding: 5px 12px;font-size: 13px;color: #4c4c4c !important}
+.pagination .active a {background: #286090; border-color: #286090; color: white !important}
+.pagination .active a:hover {background: #c7e5ff; border-color: #c7e5ff; color: #286090 !important}
+
+.navbar-nav > li > a {padding:0px}
+.navbar-nav > li {padding: 15px 0px}
+.navbar-nav > li:not(:first-child) { padding-left: 10px}
+
+.dv-form-label {display: table;padding: 6px 12px;height: 34px;text-align: right;}
+.dv-form-label label {display: table-cell; vertical-align: middle; color: #323232;font-size: 12px;letter-spacing: 0.32px; color: #323232 !important}
+textarea {resize: none}
+textarea.form-control {color: black !important}
+form textarea {height: 18vh !important}
+form .second-row {margin-top: 14px}
+.btn-row {text-align: right}
+form input[type="submit"] { border: none; border-radius: 4px !important; min-width: 9vh; text-transform: uppercase;font-size: 12px;letter-spacing: 1px;}
+form .btn-primary, .dv-filters .btn-primary { margin-right: 5px;}
+.btn-secondary {background-color: #8fa4b7 !important;font-weight: bold;box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.05) !important; min-width: 8vh;
+color: white !important; font-size: 12px;letter-spacing: 1px; border-radius: 4px !important; padding: 5px 13px !important}
+.spn-err {color:red;font-size: 12px;font-weight: bold;margin-top: 5px;display: none;}
+
+.alert-success, .alert-danger {margin-bottom: 10px !important ;border: none;padding: 8px 12px !important; font-size: 15px !important; font-weight: bold}
+.align-left {text-align: left}
+.align-center {text-align: center}
+
+.box-header { padding: 1.3rem 1.5rem 0em !important}
+.box-header.form {padding: 1.3rem 1.5rem !important}

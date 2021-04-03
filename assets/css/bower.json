@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "authors": [
+    "Aurangzaib <aurangzaibzaee@gmail.com>"
+  ],
+  "description": "...",
+  "main": "..",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "admin-lte": "2.4"
+  }
+}

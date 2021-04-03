@@ -1,0 +1,14 @@
+#img-campaign {width: 38%; cursor: pointer; height: 14vh}
+input[name="file-img"] {display: none}
+.h-boxtitle {margin: 0px;color: #286090;font-size: 17px;}
+.dv-box-title {margin-bottom: 3px; margin-left: -2px}
+.dv-box-title h4 {border-bottom: 1px solid; width: max-content; margin-bottom: 4px}
+#outlet-name {font-weight: bold}
+#confirm-delete .modal-body {color: #323232; font-size: 15px;}
+#dv-outletlist-hdr h4 {float:left}
+#dv-outletlist-hdr a {float: right}
+#modal-add-outlet .modal-dialog {width: 790px}
+
+.campaigns-active a { background: #c7e5ff; border-top-right-radius: 32px !important; border-bottom-right-radius: 32px !important}
+.campaigns-active a span {color: #0e7fe1 !important}
+.campaigns-active a i {color: #0e7fe1 !important}

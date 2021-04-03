@@ -1,0 +1,9 @@
+header.main-header {padding: 7px 0px}
+nav.navbar {display: none}
+.logo label {font-size: 23px !important}
+.dv-main {padding: 0px 15px}
+form textarea {height: 27vh !important}
+.btn-row {text-align: center; margin-top: 22px !important}
+input[name='btn-save'] {width: 100%;height: 5vh;font-size: 13px !important;}
+#dv-row-receipt {margin: 0px !important; text-align: right}
+#dv-row-receipt .col-md-12 {padding: 0px}

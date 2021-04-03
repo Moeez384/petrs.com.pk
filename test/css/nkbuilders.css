@@ -1,0 +1,928 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+body {
+  text-align: justify;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #fcfcfc;
+  
+  
+}
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #312720;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: transparent;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+.logo
+{
+	width: 100px;
+	height: 66px;
+	position: absolute;
+	margin-top: -34px;
+
+}
+/*carousal*/
+#minimal-bootstrap-carousel {
+    margin-top: 0px;
+    position: relative;
+}
+
+#minimal-bootstrap-carousel .carousel-caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    text-align: right;
+    text-shadow: none;
+}
+
+#minimal-bootstrap-carousel .carousel-caption .container {
+    display: table;
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    #minimal-bootstrap-carousel .carousel-caption .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    #minimal-bootstrap-carousel .carousel-caption .container {
+        max-width: 720px;
+    }
+}
+
+#minimal-bootstrap-carousel .carousel-caption .container .box {
+    display: table-cell;
+    text-align: left;
+}
+
+#minimal-bootstrap-carousel .carousel-caption .container .box.valign-top {
+    vertical-align: top;
+}
+
+#minimal-bootstrap-carousel .carousel-caption .container .box.valign-bottom {
+    vertical-align: bottom;
+}
+
+#minimal-bootstrap-carousel .carousel-caption .container .box.valign-middle {
+    vertical-align: middle;
+}
+
+#minimal-bootstrap-carousel .carousel-caption .container .box .content {
+    display: block;
+}
+
+#minimal-bootstrap-carousel [class*=carousel-control] {
+    background: none;
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    line-height: 48px;
+    color: #fff;
+    background-color: transparent;
+    visibility: visible !important;
+    opacity: 1;
+  /*  border: 1px solid #fff;*/
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+@media (max-width: 667px) {
+    #minimal-bootstrap-carousel [class*=carousel-control] {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #minimal-bootstrap-carousel [class*=carousel-control] {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+        line-height: 40px;
+        background: rgba(255, 255, 255, 0.4);
+        color: #000;
+    }
+}
+
+#minimal-bootstrap-carousel .carousel-control-prev {
+    left: 1%;
+}
+
+#minimal-bootstrap-carousel .carousel-control-next {
+    right: 1%;
+}
+.corosalslide
+{
+    height: 350px !important;
+}
+
+#minimal-bootstrap-carousel [class*=carousel-control]:hover {
+    opacity: 1;
+    background: #FFBA60;
+    border-color: #FFBA60;
+}
+
+/* fixing slider height */
+#minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
+    min-height: 580px;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #222;
+}
+
+
+.slider-content-style .content {
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.slider-content-style .content h3,
+.slider-content-style .content h2,
+.slider-content-style .content p {
+    margin: 0;
+}
+
+.slider-content-style .content h3 {
+    color: #fff;
+    font-size: 100px;
+    line-height: 1em;
+    font-weight: 600;
+    font-family: 'Josefin Sans';
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.slider-content-style .content p {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: .150em;
+    margin-top: 20px;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.slider-content-style .content a.thm-btn {
+    background: #ffba60;
+    display: inline-block;
+    vertical-align: middle;
+    color: #222222;
+    font-size: 18px;
+    letter-spacing: .1em;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    padding: 10px 17px;
+    margin-top: 27px;
+    transition: all .4s ease;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.slider-content-style .content a.thm-btn:hover {
+    background: #fff;
+}
+/*fontawesomeicon*/
+#socialyoutube
+{
+    position: absolute;
+    transition: all linear 1s;
+    
+    z-index: 100;
+    /*margin-left: 70%;*/
+    right: 0;
+    margin-top: 63px;
+    color: white;
+    padding: 12px;
+}
+#socialyoutube:hover
+{
+    background-color: red;
+    border-radius: 5px;
+
+}
+#socialfacebook
+{
+    position: absolute;
+    transition: all linear 1s;
+   
+    z-index: 100;
+    right: 0;
+    /*margin-left: 70%;*/
+    margin-top: 105px;
+    color: white;
+    /*padding:16px 20px 16px 15px; */
+    padding: 17px;
+}
+#socialfacebook:hover
+{
+    background-color: blue;
+    border-radius: 5px;
+
+}
+#socialinstagram
+{
+    position: absolute;
+    transition: all linear 1s;
+
+    z-index: 100;
+    right: 0;
+    /*margin-left: 70%;*/
+    margin-top: 157px;
+    color: white;
+    padding: 12px;
+
+}
+#socialinstagram:hover
+{
+    background-color: purple;
+    border-radius: 5px;
+
+}
+#socialtwitter
+{
+    position: absolute;
+    transition: all linear 1s;
+
+    z-index: 100;
+    right: 0;
+    /*margin-left: 70%;*/
+    margin-top: 199px;
+    color: white;
+    padding: 12px;
+}
+#socialtwitter:hover
+{
+    background-color: #2dcbe7;
+    border-radius: 5px;
+
+}
+/*projects*/
+.font
+{
+    justify-content: center;
+    text-align: center;
+}
+.imagesize
+{
+    width: 100%;
+    height: 200px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+.imagesize:hover
+{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.hr-
+{
+    border:solid 2px #312720;
+    background-color: #312720;
+}
+/*footer*/
+/*.footertop
+{
+    background-color: #91aaca ;
+}
+.footerbottom
+{
+    background-color: #312720;
+}
+.display
+{
+    display: flex;
+}
+.fasfaleftfont
+{
+    margin-left: 5px;
+}
+.button
+{
+    background-color: #312720;
+    color: white;
+    width:100%;
+    height: 40px;
+    transition: all 1s ease-in-out;
+
+}
+.button:hover
+{
+    
+    background-color: white;
+    color: #312720;
+
+}
+.fontrotate
+{
+    background-color: #312720;
+    transition: all 1s ease-in-out;
+}
+.fontrotate:hover
+{
+    background-color: #312720 !important;
+    color: white !important;
+    transform: rotate(20deg);;
+    background-color: white;
+    color: #312720;
+}
+
+
+.logofooter
+{
+    height: 66px;
+    width: 100%;
+}*/
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #8e857f !important;
+}
+#footer h5{
+    padding-left: 10px;
+    border-left: 3px solid black;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:black;
+}
+#footer a {
+    color: black;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+    padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size:25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+    font-size:30px;
+    margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+    color:black;
+}
+#footer ul.social li a:hover{
+    color:black;
+}
+#footer ul.quick-links li{
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+    padding: 3px 0;
+    margin-left:5px;
+    font-weight:700;
+}
+#footer ul.quick-links li a i{
+    margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+    #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+#footerbottom
+{
+    background-color: #312720;
+    margin: 0px;
+}
+
+
+/*.btn4{
+  position: relative;
+  display: block;
+  color: #202020;
+  font-size: 16px;
+  
+  text-decoration: none;
+  
+  
+  padding: 0px 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn4::before{
+  background: #202020;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn4::before{
+  width: 100%;
+  height: 0%;
+  color: #f13f3f;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+.btn4:hover::before{
+  height: 380%;
+  
+}*/
+#animatedhover
+{
+    transition: all ease-in-out 0.8s;
+}
+#animatedhover:hover
+{
+    background-color:  #fcfcfc;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border: 2px #312720 solid;
+    color: black;
+    
+}
+
+
+/*@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+* {margin: 0; padding: 0;}
+
+html, body {min-height: 100%;}
+body {
+    background: #544; 
+    background: linear-gradient(#544, #565);
+}
+
+
+.thumb {
+    width: 100%; height: 450px; margin: 70px auto;
+    perspective: 1000px;
+}
+.thumb a {
+    display: block; width: 100%; height: 100%;
+    
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url("../images/1.jpg");
+   
+    background-size: 0, cover;
+
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+.thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+
+.thumb a:after {
+   
+    content: ''; position: absolute; left: 0; bottom: 0; 
+    width: 100%; height: 36px;
+    
+    background: inherit; background-size: cover, cover;
+    
+    background-position: bottom;
+   
+    transform: rotateX(90deg); transform-origin: bottom;
+}
+
+.thumb a span {
+    color: white; text-transform: uppercase;
+    position: absolute; top: 100%; left: 0; width: 100%;
+    font: bold 12px/36px Montserrat; text-align: center;
+
+    transform: rotateX(-89.99deg); transform-origin: top;
+    z-index: 1;
+}
+
+.thumb a:before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s; 
+
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+}
+.thumb:hover a:before {
+    opacity: 1;
+
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+*/
+/*project*/
+#minimal-bootstrap-carousel1 {
+    margin-top: 0px;
+    position: relative;
+}
+
+#minimal-bootstrap-carousel1 .carousel-caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    text-align: right;
+    text-shadow: none;
+}
+
+#minimal-bootstrap-carousel1 .carousel-caption .container {
+    display: table;
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    #minimal-bootstrap-carousel1 .carousel-caption .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    #minimal-bootstrap-carousel1 .carousel-caption .container {
+        max-width: 720px;
+    }
+}
+
+#minimal-bootstrap-carousel1 .carousel-caption .container .box {
+    display: table-cell;
+    text-align: left;
+}
+
+#minimal-bootstrap-carousel1 .carousel-caption .container .box.valign-top {
+    vertical-align: top;
+}
+
+#minimal-bootstrap-carousel1 .carousel-caption .container .box.valign-bottom {
+    vertical-align: bottom;
+}
+
+#minimal-bootstrap-carousel1 .carousel-caption .container .box.valign-middle {
+    vertical-align: middle;
+}
+
+#minimal-bootstrap-carousel1 .carousel-caption .container .box .content {
+    display: block;
+}
+
+
+@media (max-width: 667px) {
+    #minimal-bootstrap-carousel1 [class*=carousel-control] {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #minimal-bootstrap-carousel1 [class*=carousel-control] {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+        line-height: 40px;
+        background: rgba(255, 255, 255, 0.4);
+        color: #000;
+    }
+}
+
+
+/* fixing slider height */
+#minimal-bootstrap-carousel1.slider-home-one .carousel-inner .carousel-item {
+    min-height: 450px;
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #222;
+}
+
+
+.slider-content-style .content {
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+.hovertext
+{
+    transition: all 1s;
+}
+.hovertext:hover
+{
+    transform: scale(1.2);
+}
+.projectcardimg
+{
+    width: 100%;
+    height: 283px;
+    transition: all 1s;
+
+}
+.projectcardimg:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 49px -7px #3e5c84;
+    opacity: 0.3: 
+}
+.prbgcolor
+{
+    background-color: #312720;
+    color: white;
+}
+.nodec
+{
+    text-decoration: none;
+
+}
+.nodec:hover
+{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.fontproject
+{
+    text-align: center;
+    justify-content: center;
+}
+.gallery
+{
+    width: 100%;
+    height: 200px;
+}
+.buttoncolor
+{
+    background-color: #312720 !important;
+    color: white;
+}
+.buttoncolor:hover
+{
+    background-color: #312720 !important;
+    color: white;
+}
+.galleryimage
+{
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (max-width: 763px) {
+  .slider-content-style .content h3 {
+    font-size: 20px;
+  }
+  .mediamargin
+  {
+    margin-top: 14px;
+  }
+}
+#colbgcolor
+{
+    background-color: #e8e8e8 ;
+}
+.font1
+{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.marge
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.button1
+{
+    width: 30%;
+    background-color: #312720;
+    color: white;
+    transition: 1s all ease-in-out;
+}
+.button1:hover
+{
+    background-color: #312720;
+    color: white;
+    transform: scale(1.1);
+}
+#socialfacebook1:hover
+{
+    background-color: blue;
+    border-radius: 5px;
+
+}
+#socialyoutube1:hover
+{
+    background-color: red;
+    border-radius: 5px;
+
+}
+#socialinstagram1:hover
+{
+    background-color: purple;
+    border-radius: 5px;
+
+}
+#socialtwitter1:hover
+{
+    background-color: #2dcbe7;
+    border-radius: 5px;
+
+}
+#socialyoutube1
+{
+    
+    transition: all linear 1s;
+    
+   
+    color: black;
+    padding: 12px;
+}
+#socialfacebook1
+{
+    
+    transition: all linear 1s;
+   
+    
+    color: black;
+    /*padding:16px 20px 16px 15px; */
+    padding: 17px;
+}
+#socialinstagram1
+{
+   
+    transition: all linear 1s;
+
+    
+    color: black;
+    padding: 12px;
+
+}
+#socialtwitter1
+{
+    transition: all linear 1s;
+    color: black;
+    padding: 12px;
+}
+/*dropdown*/
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+ /* padding: 8px 16px;*/
+  text-decoration: none;
+}
+.droppad
+{
+    padding: 8px 10px;
+}
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #312720;
+    color: #FFFFFF;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*suppliers*/
+.button2
+{
+    background-color: #312720;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    transition: all 250ms ease-in-out;
+}
+.button2:hover
+{
+    color: white;
+    background-color: #312720;
+    transform: scale(1.1);
+}

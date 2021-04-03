@@ -1,0 +1,11 @@
+.dv-checkbox { display: block;  position: relative;  padding-left: 35px;  margin-bottom: 12px;  cursor: pointer;  font-size: 22px;  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;}
+.dv-checkbox input { position: absolute;  opacity: 0;  cursor: pointer;  height: 0;  width: 0;}
+.checkmark { position: absolute;  top: 0;  left: 0;  height: 22px;  width: 24px;  background-color: #e4e4e4}
+.dv-checkbox input:checked ~ .checkmark {  background-color: #0e7fe1;}
+.checkmark:after { content: "";  position: absolute;  display: none}
+.dv-checkbox input:checked ~ .checkmark:after {display: block}
+.dv-checkbox .checkmark:after {left: 10px;  top: 5px;  width: 5px;  height: 11px;  border: solid white;  border-width: 0 3px 3px 0;  -webkit-transform: rotate(45deg);  -ms-transform: rotate(45deg);  transform: rotate(45deg);}
+
+.outlets-active a { background: #c7e5ff; border-top-right-radius: 32px !important; border-bottom-right-radius: 32px !important}
+.outlets-active a span {color: #0e7fe1 !important}
+.outlets-active a i {color: #0e7fe1 !important}

@@ -1,0 +1,10 @@
+.modal-content {border-radius: 5px}
+.modal-body {text-align: center}
+.modal-body button.close {color: #323232; opacity: 1}
+/*.modal-dialog {width: 33vh}*/
+.modal-body img {width: 70%}
+#modal_qrcode #spn-serialno{position: absolute;left: 118px;bottom: 19px;color: #323232;font-weight: bold;}
+.lnk-user {color: #286090}
+.qrcode-active a {background: #c7e5ff; border-top-right-radius: 32px !important; border-bottom-right-radius: 32px !important}
+.qrcode-active a span {color: #0e7fe1 !important}
+.qrcode-active a i {color: #0e7fe1 !important}

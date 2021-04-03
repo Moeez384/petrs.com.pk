@@ -1,0 +1,11 @@
+#dv-qrcode {text-align: center}
+#dv-qrcode img {width: 13%}
+#btn-generate {width: auto; margin-right: 0px}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {font-size: 12px; color: gray !important}
+.select2-container .select2-selection--single .select2-selection__rendered {font-size: 12px; color: black !important; line-height: 25px !important}
+.select2-container--default .select2-selection--single .select2-selection__arrow {right: 4px !important}
+.select2-container--default .select2-selection--single {height: 34px !important; border: 1px solid #ccd6e6 !important; padding: 0px}
+#select2-campaign-container, #select2-product-container {padding: 6px 12px !important; border-radius: 4px;height: inherit;}
+.qrcode-active a {background: #c7e5ff; border-top-right-radius: 32px !important; border-bottom-right-radius: 32px !important}
+.qrcode-active a span {color: #0e7fe1 !important}
+.qrcode-active a i {color: #0e7fe1 !important}

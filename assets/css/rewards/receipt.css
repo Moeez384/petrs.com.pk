@@ -1,0 +1,18 @@
+    body{font-family: 'futura'; font-size: 17px}
+    #h-receipt{width: 100%; text-align: center; font-size: 40px; text-decoration: underline}
+    .spn-field{font-weight: bold; margin-right: 3px; font-size: 17px}
+    table {font-size: 17px; width: 100%}
+    #tbl-customer-info {font-size: 17px; width: 100%}
+    #dv-img img {width: 6%}
+    #p-desc {font-size: 17px; line-height: 23px}
+    #td-desc-hdr { width: 50%}
+    #td-points-hdr {width: 25%}
+    .align-top {vertical-align: top}
+    .align-right {text-align: right}
+    #tbl-reward thead, #tbl-outlet thead {border-bottom: 1px solid black}
+    #tbl-reward tbody, #tbl-outlet tbody {border-bottom: 1px solid black}
+    #td-outlet-hdr, #tbl-reward #td-title {width: 23%}
+    #tbl-customer-info td {width: 50%}
+    #lbl-outlet-info, #lbl-reward-info {line-height: 55px}
+    .td-extra {height: 3px}
+    .dv-total-points {font-weight: bold; font-size: 20px}

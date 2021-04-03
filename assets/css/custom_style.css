@@ -1,0 +1,112 @@
+.h-main {color: #404E67; font-size: 20px; margin:5px 0px}
+.float-right{float: right}
+.dataTable {width: 100% !important}
+.box-datatable { margin-top: 3px}
+.dataTables_wrapper .row:first-child { display: none}
+#topmenu-balance span:not(:first-child) {color:#3f444a;font-size: 15px;}
+#topmenu-balance span {font-size: 11px}
+.modal-dialog { margin-top: 100px}
+.modal-header h3 {font-size: 18px; margin: 0px; text-decoration: underline}
+/*.modal-body .row {display: flex; align-items: center}*/
+.modal-body label {font-size: 12px}
+.alert-success {margin: 0px;font-size: 16px;border-color:#46be8a;padding: 10px 12px;}
+.alert-danger {border-color: #f96868 !important; padding: 8px 10px; font-size: 14px; margin-bottom: 15px}
+.dataTables_wrapper th {font-size: 13px}
+.dataTables_wrapper .icon-delete {background: #f25961 !important; border-color: #f25961  !important; color: white !important}
+.dataTables_wrapper .lbl-status, .dataTables_wrapper .lbl-active {color:white !important;font-weight: normal !important;padding: 5px 8px;border-radius: 3px; text-align: center; font-size: 13px}
+.dataTables_wrapper .lbl-status {width: 100px}
+.dataTables_wrapper .lbl-active {width: 55px}
+.lbl-status.success, .lbl-active.success {background:#6fb040;}
+.lbl-status.failed, .lbl-active.failed {background:#f25961 !important} 
+#btn-publish, .publish {background-color: #f259ae; border-color: #f259ae}
+#btn-start {background: #ec128b; border-color: #ec128b}
+   #delete_keyword_modal label {font-size: 15px}
+    #delete_keyword_modal .modal-body {padding-top: 20px}
+    #delete_keyword_modal .modal-body .row {text-align: center}
+    #delete_keyword_modal .modal-footer {border-top: none}
+    #delete_keyword_modal button {width: 58px}
+.ui-dialog-titlebar {background: #6fb040 !important; color: white !important}
+.ui-dialog {left: 42% !important;z-index: 1051 !important; margin: 160px auto 0px; top: 0px !important; padding: 0px !important}
+.ui-dialog button {width: 50px}
+.ui-dialog #Yes {background: #6fb040; color: white}
+.ui-dialog #No {background: #f25961; color: white}
+.box-body {padding: 0px 10px 10px !important}
+.h-filters {color: #286090;letter-spacing: 0.4px}
+.dv-filters {padding: 20px 5px 12px;border-bottom: 1px solid #9fb7cc;margin-left: 0px;margin-right: 0px;border-top: 1px solid #9fb7cc; margin-bottom: 20px}
+.dv-filters textarea {height: 12vh}
+.form-control[readonly] {background: none}
+
+/* Checkbox style */
+/* Customize the label (the container) */
+.dv-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.dv-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 24px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.dv-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.dv-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.dv-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.dv-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*Modal css*/
+.modal-header button.close {    position: absolute;    right: 17px;    top: 18px; opacity: 1; color: #323232}
+.modal-header {padding: 12px 15px; border-bottom: 1px solid #ccd6e6 !important;}
+.modal-footer {padding-top: 12px; border-top: 1px solid #ccd6e6 !important}
